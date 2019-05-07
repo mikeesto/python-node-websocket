@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python-Node-Websocket Starter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 id="count">0</h1>
+    <h3>Python + Node.js + WebSocket</h3>
+    <p>
+      Recently I've been using Python to interact with hardware and IoT sensors.
+      I wanted an easy way to pipe the data into a Node application. This
+      example provides a simple structure for doing so. It could also be used
+      for other domains in which Python is popular, such as machine learning.
+    </p>
+    <b>python/script.py</b>
+    <p>
+      A Python script that could be used for everything & anything. In this
+      example it is a simple counter.
+    </p>
+    <b>app.js</b>
+    <p>
+      Creates a Node http server. Listens for clients connecting to the server.
+      Sends the Python output to the client. Logs any messages received from the
+      client. Uses
+      <a href="https://www.npmjs.com/package/ws" target="_blank">ws</a>, a
+      popular Node.js WebSocket library.
+    </p>
+    <b>public/js/client.js</b>
+    <p>
+      Connects to the WebSocket server. When a message is received, updates the
+      page. If the number received is even, sends a response back to the server.
+      Uses the
+      <a
+        href="https://github.com/joewalnes/reconnecting-websocket"
+        target="_blank"
+        >ReconnectingWebSocket</a
+      >
+      library to automatically reconnect if the connection is dropped.
+    </p>
+  </body>
+  <script
+    type="text/javascript"
+    src="js/reconnecting-websocket.min.js"
+  ></script>
+  <script type="text/javascript" src="js/client.js"></script>
+</html>
