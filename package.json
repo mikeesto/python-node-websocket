@@ -1,7 +1,7 @@
 {
   "name": "node-python-socket",
   "version": "1.0.0",
-  "description": "Simple Python to Node.js websocket example",
+  "description": "Simple Python, Node.js & WebSocket example",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
